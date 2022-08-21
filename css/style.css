@@ -3,7 +3,7 @@
     --Tints :
     --Shades:
     --Accents:
-    --Greys: #555
+    --Greys: #555 ,#333
 */
 
 *{
@@ -21,18 +21,106 @@ html{
     font-size: 62.5%;
 }
 body{
-    font-family: sans-serif;
+    font-family: "Rubik",sans-serif;
     line-height: 1;
     font-weight: 400;
     color: #555;
 }
 
-.test{
-    /* width: 1000px; */
-    /* 1rem = 16px  (Default)*/
-    max-width: 50rem;
-    background-color: red;
-    color: #fff;
+/* grid container */
+.section-hero{
+    background-color: #f4d5bc;
+    padding: 9.6rem 0;
+}
+.hero{
+    max-width: 130rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 9.6rem;
+}
+
+.heading-primary{
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #333;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem;
+}
+
+.hero-description{
     font-size: 2rem;
-    padding: 4rem;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+}
+
+.btn:link,.btn:visited{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    border-radius: 9px;
+    transition: all 1s;
+}
+
+.btn-full:link, .btn-full:visited{
+    background-color: #e67e22;
+    color: #fff;
+    
+}
+.btn-full:hover, .btn-full:active{
+    background-color: #cf711f;
+    color: #fff;
+}
+.btn-outline:link, .btn-outline:visited{
+    background-color: #fff;
+    color: #555;
+}
+
+.btn-outline:hover, .btn-outline:active{
+    background-color: #f4d5bc;
+    /* border: 3px solid #fff; */
+    /* Trick to add border inside btn */
+    box-shadow: inset 0 0 0 3px #fff;
+}
+.margin-right-sm{
+    margin-right: 1.6rem !important;
+}
+.hero-img{
+    width: 100%;
+}
+
+
+.delivered-meals{
+    display: flex;
+    margin-top: 8rem;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.delivered-imgs{
+    display: flex;
+}
+
+.delivered-imgs img{
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid #f4d5bc;
+}
+.delivered-imgs img:last-child{
+    margin: 0;
+}
+.delivered-text{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.delivered-text span{
+    color: #e67e22;
+    font-weight: 700;
 }
