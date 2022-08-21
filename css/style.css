@@ -1,0 +1,38 @@
+/* 
+    --primary : #e67e22
+    --Tints :
+    --Shades:
+    --Accents:
+    --Greys: #555
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* 
+        10px / 16px = 0.625 = 62.5%
+        Percentage pf user's browser font-size setting
+    */
+    /* font-size: 10px; */
+    font-size: 62.5%;
+}
+body{
+    font-family: sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+}
+
+.test{
+    /* width: 1000px; */
+    /* 1rem = 16px  (Default)*/
+    max-width: 50rem;
+    background-color: red;
+    color: #fff;
+    font-size: 2rem;
+    padding: 4rem;
+}
